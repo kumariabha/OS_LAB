@@ -10,13 +10,13 @@ int main()
 	int pid2=fork();
 	if(pid1==0)
 	{
-	printf("I am child process\n %d", pid);
+	printf("I am child process\n %d", pid1);
 	printf("Child PPID= %d",getppid());
 	printf("Child PID = %d",getpid());
 	}
 	else if (pid1>0)
 	{
-		printf("I am parent process\n %d",pid);
+		printf("I am parent process\n %d",pid1);
 		printf("parentPID= %d",getpid());
 		printf("Parent PPID= %d", getppid());
 	}
