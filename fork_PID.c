@@ -6,8 +6,8 @@
 int main()
 {
 	int pid;
-	id=fork();
-	if(id==0)
+	pid=fork();
+	if(pid==0)
 	{
 	printf("I am child process, PID=\n %d", pid);
 	printf("\n");
